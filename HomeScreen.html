@@ -13,6 +13,8 @@
 <footer class="blockquote-footer" style="text-align: center">Work In Progress!!</footer>
 <br>
 
+<!--Add the majority of this over spring break-->
+
 <!--FORM WITH TIMESTAMPS for expiration
 Change favorite to stars
 change background text to brighter
@@ -36,27 +38,16 @@ CLEAR DATA FROM MODAL-->
     <div class="tab-pane fade show active" id="item-tab-pane" role="tabpanel" aria-labelledby="item-tab" tabindex="0">
 
         <div class="container text-center" content="width=device-width, initial-scale=1">
+
             <table class="table table-striped" id="freezerContent">
-                <thead>
-                <tr>
-                <th scope="col">#</th>
-                <th scope="col">Item Name</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">Qty Type</th>
-                <th scope="col">Favorite</th>
-                </tr>
-                </thead>
+                <!--Table header component-->
+                <item-table></item-table>
                 <tbody id="tableListOfItems">
-                    <tr v-for="row in freezerContent" :key="row.number">
-                        <td>{{ row.number}}</td>
-                        <td>{{ row.name}}</td>
-                        <td>{{ row.quantity}}</td>
-                        <td>{{ row.quantityType}}</td>
-                        <td>{{ row.favorite}}</td>
-                    </tr>
+                <!--Table Row component-->
+                <!-- How do I get styling to carry over here?-->
+                <item-table-row></item-table-row>
                 </tbody>
             </table>
-
             <br>
             <br>
             <div class="container text-center">
@@ -159,22 +150,12 @@ CLEAR DATA FROM MODAL-->
     <!-- Tab 2 Content -->
     <div class="tab-pane fade" id="fridge-tab-pane" role="tabpanel" aria-labelledby="fridge-tab" tabindex="0">
         <div class="container text-center" content="width=device-width, initial-scale=1">
-            <table class="table table-striped" id="">
-                <thead>
-                <tr>
-                <th scope="col">#</th>
-                <th scope="col">Item Name</th>
-                <th scope="col">Buy Date</th>
-                <th scope="col">Expiration Date</th>
-                </tr>
-                </thead>
+            <table class="table-striped" id="tableListOfItems">
+                <!--Table Header Component-->
+                <info-table></info-table>
                 <tbody id="tableListOfItems">
-                <tr v-for="row in itemInfo" :key="row.number">
-                    <td>{{ row.number}}</td>
-                    <td>{{ row.name}}</td>
-                    <td>{{ row.buyDate}}</td>
-                    <td>{{ row.expirationDate}}</td>
-                </tr>
+                <!--Table Row Component-->
+                <info-table-row></info-table-row>
                 </tbody>
             </table>
         </div>
@@ -186,6 +167,13 @@ CLEAR DATA FROM MODAL-->
 <!--Vue Application Added-->
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="js/app.js"></script>
+<!--app-components.js is an example layout.-->
+<script src="js/app-components.js"></script>
+<!--Components start here.-->
+<script src="js/components/itemTable.js"></script>
+<script src="js/components/itemTableRow.js"></script>
+<script src="js/components/infoTable.js"></script>
+<script src="js/components/infoTableRow.js"></script>
 <!--JavaScript-->
 <script src="js/removeRow.js"></script>
 <script src="js/addRow.js"></script>

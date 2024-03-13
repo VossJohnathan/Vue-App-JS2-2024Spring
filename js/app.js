@@ -2,7 +2,6 @@ const app = Vue.createApp({
     // data: all the data for the app, must return an object
     data: function() {
         return {
-            //Now how to I go adding this to a table?
             freezerContent: [
                 {number: 1, name: 'Dino Nuggets', quantity: 12, quantityType: 'Bags', favorite: 'Favorite!'},
                 {number: 2, name: 'Hot Pocket', quantity: 3, quantityType: 'Boxes', favorite: ' '},
@@ -12,6 +11,7 @@ const app = Vue.createApp({
             itemInfo: [
                 {number: 1, name: 'Dino Nuggets', buyDate: '3-6-2024', expirationDate: '4-20-2024'},
                 {number: 2, name: 'Hot Pocket', buyDate: '2-26-2024', expirationDate: '3-12-2024'},
+                //Everlasting Ice Cream cone \o/
                 {number: 3, name: 'Ice Cream', buyDate: '3-15-44 B.C.', expirationDate: 'N̴̡̰̠̟̩̱͍͇͕͓̮͔̪̜͊̽̉̏̾̐ͅÈ̵̥̠̗͈̬̯̣̯̯͇̥͇̙͔̘͋̇͠V̶̧̨̧̢̡̧̨̧̠͍̟̺͊̂͠ͅĖ̴̡͍̺͚̼̘̹Ř̵̪̠̪̽̾͋̒͂'},
             ],
         }

@@ -25,7 +25,7 @@ app.component('itemTable', {
     },
 
     template: `
-      <table class="table table-striped" id="freezerContent">
+      <table class="table table-striped">
         <thead>
         <tr>
           <th scope="col">#</th>

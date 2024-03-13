@@ -5,4 +5,7 @@ function removeRow() {
 
     //delete from table
     document.getElementById("freezerContent").deleteRow(rowToDelete);
+
+    //Delete from info table on other tab too.
+    //document.getElementById("itemInfoTable").deleteRow(rowToDelete);
 }

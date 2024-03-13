@@ -46,28 +46,14 @@ CLEAR DATA FROM MODAL-->
                 <th scope="col">Favorite</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Dino Nuggies</td>
-                    <td>12</td>
-                    <td>Bags</td>
-                    <td>Favorite!</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Hot Pocket</td>
-                    <td>3</td>
-                    <td>Boxes</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Ice Cream</td>
-                    <td>2</td>
-                    <td>Tubs</td>
-                    <td>Favorite!</td>
-                </tr>
+                <tbody id="tableListOfItems">
+                    <tr v-for="row in freezerContent" :key="row.number">
+                        <td>{{ row.number}}</td>
+                        <td>{{ row.name}}</td>
+                        <td>{{ row.quantity}}</td>
+                        <td>{{ row.quantityType}}</td>
+                        <td>{{ row.favorite}}</td>
+                    </tr>
                 </tbody>
             </table>
 
@@ -182,24 +168,12 @@ CLEAR DATA FROM MODAL-->
                 <th scope="col">Expiration Date</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Dino Nuggies</td>
-                    <td>3-6-2024</td>
-                    <td>4-20-2024</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Hot Pocket</td>
-                    <td>2-26-2024</td>
-                    <td>3-12-2024</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Ice Cream</td>
-                    <td>3-15-44 B.C.</td>
-                    <td>N̴̡̰̠̟̩̱͍͇͕͓̮͔̪̜͊̽̉̏̾̐ͅÈ̵̥̠̗͈̬̯̣̯̯͇̥͇̙͔̘͋̇͠V̶̧̨̧̢̡̧̨̧̠͍̟̺͊̂͠ͅĖ̴̡͍̺͚̼̘̹Ř̵̪̠̪̽̾͋̒͂</td>
+                <tbody id="tableListOfItems">
+                <tr v-for="row in itemInfo" :key="row.number">
+                    <td>{{ row.number}}</td>
+                    <td>{{ row.name}}</td>
+                    <td>{{ row.buyDate}}</td>
+                    <td>{{ row.expirationDate}}</td>
                 </tr>
                 </tbody>
             </table>

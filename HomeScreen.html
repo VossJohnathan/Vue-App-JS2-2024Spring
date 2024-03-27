@@ -40,6 +40,16 @@ CLEAR DATA FROM MODAL-->
         <div class="container text-center" content="width=device-width, initial-scale=1">
 
             <table class="table table-striped" id="freezerContent">
+                <!--New Vue Table -->
+                <div id="app">
+
+                </div>
+                <script>
+                    import App from "./App.vue";
+
+                    vue.createApp(App).mount("#app");
+                </script>
+
                 <!--Table header component-->
                 <item-table></item-table>
                 <tbody >
@@ -182,5 +192,6 @@ CLEAR DATA FROM MODAL-->
 <script>
     app.mount('#myTabContent')
 </script>
+
 </body>
 </html>

@@ -21,7 +21,6 @@ app.component('infoTable', {
     },
 
     template: `
-      <table class="table table-striped" id="itemInfoTable">
         <thead>
         <tr>
           <th scope="col">#</th>
@@ -30,6 +29,5 @@ app.component('infoTable', {
           <th scope="col">Expiration Date</th>
         </tr>
         </thead>
-      </table>
     `
 });

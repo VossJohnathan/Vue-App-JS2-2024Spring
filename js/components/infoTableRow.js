@@ -34,7 +34,6 @@ app.component('infoTableRow', {
     },
 
     template: `
-      <table class="table table-striped">
         <thead>
         <tr v-for="row in itemInfo" :key="row.number" >
           <td>{{ row.number}}</td>
@@ -43,7 +42,6 @@ app.component('infoTableRow', {
           <td>{{ row.expirationDate}}</td>
         </tr>
         </thead>
-      </table>
        
    `
 });

@@ -34,14 +34,14 @@ app.component('infoTableRow', {
     },
 
     template: `
-        <thead>
+        
         <tr v-for="row in itemInfo" :key="row.number" >
           <td>{{ row.number}}</td>
           <td>{{ row.name}}</td>
           <td>{{ row.buyDate}}</td>
           <td>{{ row.expirationDate}}</td>
         </tr>
-        </thead>
+        
        
    `
 });

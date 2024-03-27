@@ -37,7 +37,7 @@ app.component('itemTableRow', {
     },
 
     template: `
-        <thead>
+        
         <tr v-for="row in freezerContent" :key="row.number" >
           <td>{{ row.number}}</td>
           <td>{{ row.name}}</td>
@@ -45,7 +45,7 @@ app.component('itemTableRow', {
           <td>{{ row.quantityType}}</td>
           <td>{{ row.favorite}}</td>
         </tr>
-        </thead>
+        
       
      
      

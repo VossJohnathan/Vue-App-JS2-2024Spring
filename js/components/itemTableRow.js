@@ -46,7 +46,7 @@ app.component('itemTableRow', {
           <td>{{ row.favorite}}</td>
         </tr>
         
-      
+      <!--shopping list example for this-->
      
      
        

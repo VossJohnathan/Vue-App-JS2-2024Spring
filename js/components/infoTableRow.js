@@ -9,7 +9,7 @@ app.component('infoTableRow', {
                 {number: 1, name: 'Dino Nuggets', buyDate: '3-6-2024', expirationDate: '4-20-2024'},
                 {number: 2, name: 'Hot Pocket', buyDate: '2-26-2024', expirationDate: '3-12-2024'},
                 //Everlasting Ice Cream cone \o/
-                {number: 3, name: 'Ice Cream', buyDate: '3-15-44 B.C.', expirationDate: 'N̴̡̰̠̟̩̱͍͇͕͓̮͔̪̜͊̽̉̏̾̐ͅÈ̵̥̠̗͈̬̯̣̯̯͇̥͇̙͔̘͋̇͠V̶̧̨̧̢̡̧̨̧̠͍̟̺͊̂͠ͅĖ̴̡͍̺͚̼̘̹Ř̵̪̠̪̽̾͋̒͂'},
+                {number: 3, name: 'Ice Cream', buyDate: '3-15-44 B.C.', expirationDate: 'NEVER'},
             ],
         }
     },
